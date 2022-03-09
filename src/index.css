@@ -1,0 +1,347 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Cho phần hover image */
+figure.effect-julia {
+	background: #2f3238;
+}
+
+figure.effect-julia img {
+	max-width: 150px;
+	height: 400px;
+	-webkit-transition: opacity 1s, -webkit-transform 1s;
+	transition: opacity 1s, transform 1s;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+figure.effect-julia figcaption {
+	text-align: left;
+}
+
+figure.effect-julia h2 {
+	position: relative;
+	padding: 0.5em 0;
+}
+
+figure.effect-julia p {
+	display: inline-block;
+	margin: 0 0 0.25em;
+	padding: 0.4em 1em;
+	background: rgba(255,255,255,0.9);
+	color: #2f3238;
+	text-transform: none;
+	font-weight: 500;
+	font-size: 75%;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(-360px,0,0);
+	transform: translate3d(-360px,0,0);
+}
+
+figure.effect-julia p:first-child {
+	-webkit-transition-delay: 0.15s;
+	transition-delay: 0.15s;
+}
+
+figure.effect-julia p:nth-of-type(2) {
+	-webkit-transition-delay: 0.1s;
+	transition-delay: 0.1s;
+}
+
+figure.effect-julia p:nth-of-type(3) {
+	-webkit-transition-delay: 0.05s;
+	transition-delay: 0.05s;
+}
+
+figure.effect-julia:hover p:first-child {
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+}
+
+figure.effect-julia:hover p:nth-of-type(2) {
+	-webkit-transition-delay: 0.05s;
+	transition-delay: 0.05s;
+}
+
+figure.effect-julia:hover p:nth-of-type(3) {
+	-webkit-transition-delay: 0.1s;
+	transition-delay: 0.1s;
+}
+
+figure.effect-julia:hover img {
+	opacity: 0.4;
+	-webkit-transform: scale3d(1.1,1.1,1);
+	transform: scale3d(1.1,1.1,1);
+}
+
+figure.effect-julia:hover p {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+
+.grid {
+	position: relative;
+	clear: both;
+	margin: 0 auto;
+	padding: 1em 0 4em;
+	max-width: 1000px;
+	list-style: none;
+	text-align: center;
+}
+
+/* Common style */
+.grid figure {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	margin: 10px 1%;
+	min-width: 270px;
+	max-width: 480px;
+	max-height: 260px;
+	width: 48%;
+	height: auto;
+	background: #3085a3;
+	text-align: center;
+	cursor: pointer;
+}
+
+.grid figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	max-width: 100%;
+	opacity: 0.8;
+}
+
+.grid figure figcaption {
+	padding: 2em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+	pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+
+
+.grid figure h2 {
+	word-spacing: -0.15em;
+	font-weight: 300;
+}
+
+.grid figure h2 span {
+	font-weight: 800;
+}
+
+.grid figure h2,
+.grid figure p {
+	margin: 0;
+}
+
+.grid figure p {
+	letter-spacing: 1px;
+	font-size: 68.5%;
+}
+
+.comment-customer {
+  border-radius: 100%;
+ border: 5px solid #50c7e2;
+  /* position: absolute; */
+  margin: 0 auto;
+  transition: all 0.2s linear;
+  background-color: black; 
+  background: black;
+  width: 220px;
+  height: 220px;
+  top: 25px;
+
+}
+.comment-customercoment{
+	border-radius: 100%;
+	margin: 0 auto;
+	transition: all 0.2s linear;
+	background-color: black; 
+	background: black;
+	width: 150px;
+	height: 150px;
+	top: 25px;
+	box-shadow: tomato;
+	border: 5px solid white;
+}
+  /*Cho phần silde */
+
+
+.comment-customer1{
+  width: 220px;
+  height: 220px;
+}
+.copy-right{
+  background-color: #2f353d;
+  width: 100%;
+  height: 66px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: -8px;
+  padding-top: 20px;
+   padding-bottom: 5px;
+}
+.back-top{
+  font-size: 50px;
+}
+.contact-us{
+  list-style: none;
+  margin-top: -10px;
+  padding: 0;
+  overflow: hidden;
+}
+.container-pageDetail{
+  margin-top: 100px;
+  max-width: 100%;
+
+}
+.title-pageDetail{
+  line-height: 2.5;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  
+}
+.pageDetail-fucntion{
+  background-color: #eff1f3 !important;
+}
+.leaderTeam{
+	margin: 0 auto;
+	margin-left: 60px;
+	width: 1100px;
+}
+.container-banner{
+	/* margin-top: 150px; */
+	background-position: 50% 100%;
+	background-size: cover;
+	height: 100vh;
+}
+.container-icon{
+	font-size: 150px;
+}
+.container-iconpageDetail{
+	font-size: 100px;
+}
+.googleMap{
+	max-width: 300px;
+	height: '445px';
+	margin-Top: '30px';
+}
+.title-googleMap{
+	width:300px;
+	background-color: white;
+	margin-Top: 35px;
+	margin-Left: -780px;
+	margin-Right: 800px 
+}
+.content1 {
+	/* margin-left: -500px; */
+	text-align: left;
+	margin-top: -1px;
+}
+.admin {
+	height: 150px;
+	margin-top: -70px;
+}
+/* Reponsive */
+
+@media screen and (max-width: 900px) {
+	.title-googleMap{
+		margin-Left: 0px;
+		margin-Top: -490px;
+		
+	}
+}
+
+@media screen and (max-width: 960px) {
+	.pageDetail-fucntion{
+		background-color: #eff1f3 !important;
+	}
+}
+  @media only screen and (max-width: 400px) {
+	mapContainerStyle {
+	  background-color: yellow;
+	  max-width: 300px
+	}
+  }
+  /* Login */
+  .divlogin{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+  }
+  .formLogin {
+	height: 400px;
+	width: 500px;
+	background: #0284b8;
+    border-radius: 1em;
+  }
+  .formItem{
+	  width: 400px;
+  }
+  .divItemLogin{
+	 padding-top: 10px;
+  }
+  .logoLogin{
+	  padding: 1px;
+	  height: 180px;
+	  width: 500px;
+	  border-radius: 1em;
+  }
+  @media screen and (max-width: 576px){
+	  .divlogin{
+		left: 39%;
+		top: 30%;
+		transform: translate(-2%,50%); 
+	  }
+	  .ant-form{
+		  height: 500px;
+	  }
+	  .ant-form .ant-form-item{
+		  transform: translate(50px,10px);
+	  }
+  }
+  @media screen and (max-width: 345px){
+	  .divlogin{
+		  transform: translate(10%,111%);
+	  }
+  }
+  @media screen and (max-width: 580px){
+	.demoButton{
+		margin-top: 30px;			
+	}
+}
